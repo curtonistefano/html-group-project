@@ -6,7 +6,7 @@ If you want the **absolute easiest GitHub + VS Code setup for a group**, here’
 
 ## 1. Create a repo on GitHub
 
-One person (the “owner”):
+One person (the “owner”): sugon
 
 1. Go to GitHub → **New repository**
 2. Name it (e.g. `html-project`)
