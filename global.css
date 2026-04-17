@@ -3,3 +3,9 @@ body {
     background-size: cover;
     background-position: center;
 }
+.titolo {
+    backdrop-filter: blur(10px);
+    
+    display: flex;
+    align-items: center;
+}
