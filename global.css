@@ -3,8 +3,10 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 .titolo {
     backdrop-filter: blur(10px);
+    background-color: rgba(255, 0, 0, 0.5);
     
     display: flex;
     align-items: center;
