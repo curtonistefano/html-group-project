@@ -1,0 +1,76 @@
+/*Selettori
+‘ * ‘è il selettore universale, pende tutti gli elementi dell’html.
+
+H1 P DIV  selettore di tag: selezionano specificamente.
+
+.Nome classe Selettori di classe. comodo perchè si assegna una classe a elementi he può avere ad esempio il colore delle scritte rosso. class=”colore-rosso”.
+
+#nome id Selettori di id.
+
+[attributo] Selettori di attributo.(^ che iniziano per..)($ che finisce per…)(*che contengono..)(~= che contiene la parola separata dal resto. es: class=”sono importante”; es sbagliato: class”sonoimportante”)
+
+.classe elemento Combinatore discendente. Seleziona tutti gli elementi di questo tipo contenuti nella classe di nome..
+
+.classe > elemento Combinatore di figlio diretto. Seleziona tutti gli elementi presenti in una classe ma se voglio selezionare uno specifico elemeto in una classe contenuto dalla classe interessata non viene preso a meno che non sia l’unico elemento della classe contenuta nella classe interessata.
+
+elemento + elemento Combinatore fratello adiacente.Seleziona il primo elemento e quello che lo segue sul suo stesso piano, quindi se ho H1+P prende h1 e poi P solo se non è contenuto in una classe differrente a quella di h1. stessa cosa con classi.
+
+elemento ~ elemento Combinatore fratelli generali.Seleziona non solo il seguente ma tutti i fratelli.
+
+elemento, elemento,..... Ragruppamento. Seleziona tutti gli elementi elencati.
+
+elemento.classe Selettori concatenanti.
+
+combinazioni complesse. elementi dentro classi dentro classi ecc… usando i precedenti elettori.
+
+Selettori specifici per form
+*/
+
+/*Pseudo clssi*/    
+a:hover {
+    coor: red;
+    /*Quando passi sopra cambia colore in rosso*/
+}
+
+button:active {
+    background-color: blue;
+    /*Quando pemo il tasto cambia colore*/
+}
+
+imput:focus {
+    border: 2px solid green;
+    /*Quando seleziono l'imput si evidenzia il bordo di verde*/
+}
+
+imput:invalid {
+    border-color: red;
+    /* se campo imput non valido allora evidenzia bordi di rosso*/
+}
+
+/*Pseudo elementi*/
+h1::before {
+    content: ★;
+    color: gold;
+}
+
+h1::after {
+    content: ★;
+    color: gold;
+}
+p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+p::first-letter{
+    font-size: 3em;
+    float: left;
+}
+
+/* vw è l'unità di misura che permette di scalare le grandezze in base alla gandezza del foglio*/
+/*width: fit-content adatta i bordi al testo senza occupare tutta la linea*/
+/* ul/ol{
+list-style-type: ---------; // si può trasformare nche in un menù
+}*/
+/* textarea{
+resize: null/vertical/horizontal; come espandere il testo per commentare nei form
+}*/
