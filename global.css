@@ -19,3 +19,9 @@ body {
     box-shadow: 1px 1px 1px #000f;
 }
 
+.floating {
+    position: fixed;
+    top:20px;
+    left:20px;
+    z-index: 1;
+}
