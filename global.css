@@ -25,3 +25,33 @@ body {
     left:20px;
     z-index: 1;
 }
+
+.glass-input {
+    backdrop-filter: none;
+    background-color: rgba(255, 255, 255, 0);
+
+    margin: 5px;
+    padding: 5px;
+
+    font-family: "JetBrains Mono", "Fira Code", monospace; /*styles from body overridden by default (for input elements)*/
+}
+
+.glass-input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.glass-input:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#form-login-button {
+    cursor: pointer;
+    border-bottom: none;
+    border-right: none;
+    transition: 0.5s;
+}
+
+#form-login-button:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+}

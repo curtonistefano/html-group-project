@@ -18,11 +18,14 @@
         </a>
         </div>
         <!--<img src="https://images.pexels.com/photos/10004971/pexels-photo-10004971.jpeg">-->
-        <div class="glass-box floating" style>
+        <div class="glass-box floating">
             <p>test</p>
             <form>
-                <input type="email" name="email" placeholder="Enter Email" required>
-                <input type="submit" placeholder="Login">
+                <div style="display: flex; flex-direction: column;">
+                <input class="glass-box glass-input" type="email" placeholder="Email" required>
+                <input class="glass-box glass-input" placeholder="Password" required>
+                <button class="glass-box glass-input" id="form-login-button" type="submit">Login</button>
+                </div>
             </form>
         </div>    
     </body>
