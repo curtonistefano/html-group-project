@@ -1,0 +1,31 @@
+details {
+  display: flex;
+  flex-direction: column;
+
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  width: fit-content;
+  margin-left: 0;
+}
+
+summary {
+ font-family: "JetBrains Mono", "Fira Code", monospace;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Rimuove il triangolino di default su Chrome/Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Aggiunge una transizione fluida su Firefox e altri browser moderni */
+details summary {
+  transition: all 0.3s ease;
+}
