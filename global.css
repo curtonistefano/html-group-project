@@ -1,8 +1,8 @@
 body {
-    background-image: url("https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?cs=srgb&dl=pexels-brotin-biswas-158640-518543.jpg&fm=jpg");
+    background-image: url("background.jpeg"); /*background-image: url("https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?cs=srgb&dl=pexels-brotin-biswas-158640-518543.jpg&fm=jpg");*/
     background-size: cover;
     background-position: center;
-
+    
     background-attachment: fixed;
     
     font-family: "JetBrains Mono", "Fira Code", monospace;
@@ -21,8 +21,6 @@ body {
 
 .floating {
     position: fixed;
-    top:20px;
-    left:20px;
     z-index: 1;
 }
 
