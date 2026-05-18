@@ -1,0 +1,126 @@
+body {
+    background-image: url("https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?cs=srgb&dl=pexels-brotin-biswas-158640-518543.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: fixed;
+    
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+.glass-box {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    
+    padding-inline: 20px;
+    border-radius: 20px;
+    border-top: 1px solid #ffffff90;
+    border-left: 1px solid #ffffff90;
+    box-shadow: 1px 1px 1px #000f;
+}
+
+.floating {
+    position: fixed;
+    top:20px;
+    left:20px;
+    z-index: 1;
+}
+
+.glass-input {
+    backdrop-filter: none;
+    background-color: rgba(255, 255, 255, 0);
+
+    margin: 5px;
+    padding: 5px;
+
+    font-family: "JetBrains Mono", "Fira Code", monospace; /*styles from body overridden by default (for input elements)*/
+}
+
+.glass-input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.glass-input:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#form-login-button {
+    cursor: pointer;
+    border-bottom: none;
+    border-right: none;
+    transition: 0.5s;
+}
+
+#form-login-button:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+details {
+  display: flex;
+  flex-direction: column;
+
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  width: fit-content;
+  margin-left: 0;
+}
+
+summary {
+        backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    
+    padding-inline: 20px;
+    border-radius: 20px;
+    border-top: 1px solid #ffffff90;
+    border-left: 1px solid #ffffff90;
+    box-shadow: 1px 1px 1px #000f;
+    
+    font-size: large;
+    font-weight: bold;
+    color: rgb(115, 26, 163);
+ font-family: "JetBrains Mono", "Fira Code", monospace;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Rimuove il triangolino di default su Chrome/Safari */
+summary::-webkit-details-marker {
+    
+  display: none;
+}
+
+/* Aggiunge una transizione fluida su Firefox e altri browser moderni */
+details summary {
+    
+  transition: all 0.3s ease;
+}
+
+.glass-box-black {
+
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    padding-inline: 20px;
+    border-radius: 20px;
+    border-top: 1px solid #00000090;
+    border-left: 1px solid #00000090;
+    box-shadow: 1px 1px 1px #000f;
+}
+.glass-details {
+    margin-bottom: 15px;
+}
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
