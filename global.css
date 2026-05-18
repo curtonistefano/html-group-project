@@ -1,5 +1,5 @@
 body {
-    background-image: url("background.jpeg"); /*background-image: url("https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?cs=srgb&dl=pexels-brotin-biswas-158640-518543.jpg&fm=jpg");*/
+    background-image: url("media/background.jpeg"); /*background-image: url("https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?cs=srgb&dl=pexels-brotin-biswas-158640-518543.jpg&fm=jpg");*/
     background-size: cover;
     background-position: center;
     
@@ -52,4 +52,8 @@ body {
 
 #form-login-button:hover {
       background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hidden{
+    display: none;
 }

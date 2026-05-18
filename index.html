@@ -2,6 +2,7 @@
     <head>
         <title>Titolo del sito</title>
         <link rel="stylesheet" href="global.css">
+        <script src="main.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,23 +10,31 @@
 
     </head>
     <body>
-        <div class="glass-box floating" style="position:fixed; left: 8px; right: 8px; height: 30px; display:flex; justify-content: space-between; "> 
-            <div style="width: 30px; height: 20px; background-color: rgb(0,0,255);"></div>
-            <div style="width: 30px; height: 20px; background-color: rgb(0,0,255);"></div>
+        <div class="glass-box floating" style="position: fixed; left: 8px; right: 8px; height: 30px; display: flex; justify-content: space-between; "> 
+            <div style="display: flex; padding: 3px; gap: 10px"> 
+                <button id="login-button" style="background-color: rgba(0, 0, 0, 0); border:none; display:flex; padding:0px;"> <!--padding 0 overrides chrome default 6 and 1 px padding for buttons-->
+                    <img src="media/login-button.svg" style="min-width: 0px;">
+                </button>
+                <a href="sign-in-page" style="display: flex; min-width: 0px;">
+                    <img src="media/signin-button.svg">
+                </a>
+            </div>
+            <div style="display: flex; padding: 3px;"> 
+                <a href="https://github.com/curtonistefano/html-group-project" style="display: flex; min-width: 0px;">
+                    <img src="https://cdn.simpleicons.org/github">
+                </a>
+            </div>
         </div>
 
         <div style="display: flex; justify-content: center;padding-top: 41px"> <!--padding-top = 3px(approx borders+shadows) + 8px + ((2 * padding + height)of the top bar-->
             <div class="glass-box">
             <h1>Fake News</h1>
-            </div> 
-            <a href="https://github.com/curtonistefano/html-group-project">
-                <img src="https://cdn.simpleicons.org/github" width="30px">
-            </a>
+            </div>
         </div>
 
         <!--<img src="https://images.pexels.com/photos/10004971/pexels-photo-10004971.jpeg">-->
-        <div class="glass-box floating" style="top:49px; left:28px;">
-            <p>test</p>
+        <div id="login-box" class="glass-box floating hidden" style="top:49px; left:28px;">
+            <p>Login</p>
             <form>
                 <div style="display: flex; flex-direction: column;">
                     <input class="glass-box glass-input" type="email" placeholder="Email" required>
