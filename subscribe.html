@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Iscriviti</title>
+        <link rel="stylesheet" href="global.css">
+        <script src="main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="glass-box floating" style="position: fixed; left: 8px; right: 8px; height: 30px; display: flex; justify-content: space-between; "> 
+            <div style="display: flex; padding: 3px; gap: 10px"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"></path></svg>
+
+                <button id="login-button" style="background-color: rgba(0, 0, 0, 0); border:none; display:flex; padding:0px;"> <!--padding 0 overrides chrome default 6 and 1 px padding for buttons-->
+                    <img src="media/login-button.svg" style="min-width: 0px;">
+                </button>
+                <a href="sign-in-page" style="display: flex; min-width: 0px;">
+                    <img src="media/signin-button.svg">
+                </a>
+            </div>
+            <div style="display: flex; padding: 3px;"> 
+                <a href="https://github.com/curtonistefano/html-group-project" style="display: flex; min-width: 0px;">
+                    <img src="https://cdn.simpleicons.org/github">
+                </a>
+            </div>
+        </div>
+     <div style="display: flex; justify-content: center;padding-top: 41px"> <!--padding-top = 3px(approx borders+shadows) + 8px + ((2 * padding + height)of the top bar-->
+            <div class="glass-box">
+            <h1>Iscriviti</h1>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;padding-top: 20px">
+            <form class="glass-box" style="display: flex; flex-direction: column; gap: 10px; padding: 20px;">
+                <input class="glass-box glass-input" type="text" placeholder="Nome" required>
+                <input class="glass-box glass-input" type="text" placeholder="Cognome" required>
+                <div style="display: flex; gap: 10px;">
+
+        <input class="glass-box glass-input" type="email" placeholder="Email" required style="flex:1;">
+
+        <input class="glass-box glass-input" type="email" placeholder="Conferma Email" required style="flex:1;">
+                </div>
+                <input class="glass-box glass-input" type="date" placeholder="Data di nascita" required>
+                <div style="display: flex; gap: 10px;">
+                <input class="glass-box glass-input" type="password" placeholder="Password" required>
+                <input class="glass-box glass-input" type="password" placeholder="Conferma password" required> 
+                </div>       
+                <button class="glass-box glass-input" type="submit" style="color: green;"">Iscriviti</button>
+            </form>     
+</body>
+</html>
