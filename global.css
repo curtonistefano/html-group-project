@@ -89,3 +89,8 @@ body {
     height: 300px;
     width: 300px;
 }
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
