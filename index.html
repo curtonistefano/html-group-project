@@ -3,7 +3,6 @@
         <title>Titolo del sito</title>
         <link rel="stylesheet" href="global.css">
         <script src="main.js"></script>
-       <a href="about_fake.html">About</a>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +13,7 @@
         <div class="glass-box floating" style="position: fixed; left: 8px; right: 8px; height: 30px; display: flex; justify-content: space-between; "> 
             <div style="display: flex; padding: 3px; gap: 10px"> 
                 <button id="login-button" style="background-color: rgba(0, 0, 0, 0); border:none; display:flex; padding:0px;"> <!--padding 0 overrides chrome default 6 and 1 px padding for buttons-->
-                    <img src="media/login-button.svg" style="min-width: 0px;">
+                    <img src="media/login-button.svg">
                 </button>
                 <a href="sign-in-page" style="display: flex; min-width: 0px;">
                     <img src="media/signin-button.svg">
@@ -29,7 +28,7 @@
 
         <div style="display: flex; justify-content: center;padding-top: 41px"> <!--padding-top = 3px(approx borders+shadows) + 8px + ((2 * padding + height)of the top bar-->
             <div class="glass-box">
-            <h1>Fake News</h1>
+            <h1 style="font-size: 60; margin: 20px">Fake News</h1>
             </div>
         </div>
 
@@ -43,6 +42,14 @@
                     <button class="glass-box glass-input" id="form-login-button" type="submit">Login</button>
                 </div>
             </form>
+        </div>
+        <div id="main-card-box">
+            <div class="glass-box main-card">
+            </div>
+            <div class="glass-box main-card">
+            </div>
+            <div class="glass-box main-card">
+            </div>
         </div>
     </body>
 </html>
