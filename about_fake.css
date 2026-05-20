@@ -3,7 +3,7 @@ details {
   flex-direction: column;
   
   margin-top : 20px;
-  width: 1200px;
+  width: min(1200px, 90vw);
   
 }
 
@@ -22,7 +22,7 @@ summary {
     border-right: 1px solid #ffffff90;
     box-shadow: 1px 1px 1px #000f;
     
-    font-size: large;
+    font-size: clamp(14px, 1.1vw, 18px);
     font-weight: bold;
     color: black;
  font-family: "JetBrains Mono", "Fira Code", monospace;
@@ -63,4 +63,7 @@ details summary {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+}
+body {
+    font-size: clamp(14px, 1.2vw, 18px);
 }
