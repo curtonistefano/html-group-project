@@ -91,3 +91,8 @@ body {
     scroll-snap-align: start;
     background: steelblue;
 }
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
