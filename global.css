@@ -75,22 +75,17 @@ body {
 }
 
 
-.carousel-wrapper{ /* nedeed because right margin gets ignored on carousel (because of overflow-x: scroll;) */
+.fn-card-wrapper{ /* nedeed because right margin gets ignored on carousel (because of overflow-x: scroll;) */
     padding-inline: 32px;
     margin-top: 40px;
-}
-
-.carousel{
-    min-width: 100%; /* l'elemeto carousel è come un "finestrino" */
     display: flex;
-    gap: 60px;
-    overflow-x: scroll; /* aggiunge il meccanismo di scroll */
-    scroll-snap-type: x mandatory;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.carousel-card{
+.fn-card{
     height: 300px;
-    min-width: 30%; /* occupa il più possibile rispettando i gap, margini, etc... */
-    scroll-snap-align: start;
-    background: steelblue;
+    width: 300px;
 }
