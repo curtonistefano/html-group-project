@@ -58,12 +58,11 @@ body {
     display: none;
 }
 
-#main-card-box{
+.main-card-box{
     margin-inline: 32px; /* 40px (same as gap) - 8px (default body maring) */
     margin-top: 100px;
     height: 300px;
     display: flex;
-    flex-direction: row;
     gap :40px;
 }
 
@@ -93,4 +92,8 @@ input, textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+}
+
+h1{
+    text-align: center;
 }
