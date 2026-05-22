@@ -3,11 +3,9 @@
         <title>CheckNews</title>
         <link rel="stylesheet" href="global.css">
         <script src="main.js"></script>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- il font può essere importato solo sull'index perchè il browser lo trova nella cache per le altre pagine-->
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-
+        <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
     </head>
     <body>
         <div class="glass-box floating" style="position: fixed; left: 8px; right: 8px; height: 30px; display: flex; justify-content: space-between; "> 
@@ -31,7 +29,7 @@
 
         <div style="display: flex; justify-content: center;padding-top: 41px"> <!--padding-top = 3px(approx borders+shadows) + 8px + ((2 * padding + height)of the top bar-->
             <div class="glass-box">
-            <h1 style="font-size: 60; margin: 20px">CheckNews</h1>
+                <h1 style="font-size: 60px; margin: 20px">CheckNews</h1>
             </div>
         </div>
 
@@ -63,7 +61,7 @@
                     <img src="media/gear.svg">
                 </div>
             </a>
-            <a href="contante.html" class="glass-box main-card" style=" color:black; text-decoration: none;"> 
+            <a href="lista.html" class="glass-box main-card" style=" color:black; text-decoration: none;"> 
                 <h1>
                     Lista Fake News
                 </h1>
